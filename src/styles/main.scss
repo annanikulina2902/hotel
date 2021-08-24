@@ -1,0 +1,9 @@
+@import './fonts.scss';
+
+$font-size: 1rem;
+$font-color: #BC9CFF;
+
+html {
+    font-size: $font-size;
+    color: $font-color;
+}
