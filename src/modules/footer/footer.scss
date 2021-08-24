@@ -1,0 +1,12 @@
+.footer{
+    background-color: wheat;
+}
+    &__main-container {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    &__main-logo {
+        background-image: url(../../images/logo.svg);
+        
+    }
