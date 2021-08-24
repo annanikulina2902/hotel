@@ -1,0 +1,32 @@
+.header{
+    background: #FFFFFF;
+	padding: 10px 0px 12px 0px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0%;
+    max-width: 1159px;
+    align-items: center;
+}
+.header__logo{
+    background-image: url(../../images/logo.svg);
+    margin-right: auto;
+	width: 105px;
+    height: 42px;
+    background-repeat: no-repeat;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1159px;
+    margin: 0 auto;
+    align-items: center;
+    flex-basis: 771px;
+    color: #1F2041;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.buttonfull{
+    background-image: url(../../images/button-full.svg);
+}
