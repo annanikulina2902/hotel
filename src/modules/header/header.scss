@@ -1,32 +1,45 @@
-.header{
+.header {
     background: #FFFFFF;
-	padding: 10px 0px 12px 0px;
-    display: flex;
-    margin: 0 auto;
-    padding: 0%;
-    max-width: 1159px;
-    align-items: center;
+    height: 50px;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    &__container-logo {
+        background-image: url(../../images/toxin.svg);
+        margin-right: auto;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        object-fit: contain;
+        padding-left: 60px;
+        padding-right: 100px;
+    }
+    
+    
 }
-.header__logo{
-    background-image: url(../../images/logo.svg);
-    margin-right: auto;
-	width: 105px;
-    height: 42px;
-    background-repeat: no-repeat;
-}
-.nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1159px;
-    margin: 0 auto;
-    align-items: center;
-    flex-basis: 771px;
-    color: #1F2041;
-    list-style-type: none;
-}
-a {
-    text-decoration: none;
-}
-.buttonfull{
-    background-image: url(../../images/button-full.svg);
-}
+    .nav {	
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: max-content;
+        list-style: none;
+        color: rgba(31, 32, 65, 0.5);
+
+        &-item {
+            font: normal normal 14px/17px Montserrat;
+            color: rgba(31, 32, 65, 0.5);
+            margin-left: 20px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
