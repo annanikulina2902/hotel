@@ -1,40 +1,60 @@
 .footer {
-    height: 50px;
+	padding: 15px 15px 10px 187px;
+    display: flex;
+    
+    
+    
+    
 
-    &__container {
-        display: flex;
-        align-items: center;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        width: 80%;
-        max-width: 900px;
-        margin: 0 auto;
-    }
-}
-    .container-info {
+    &__main {
         position: relative;
-        flex-basis: 23%;
-        padding-top: 58px;
+		flex-basis: 23%;	
+        width: 100%;
+    } 
+    &__main-quote {
+        font: 14px Montserrat;
+		color: #1F2041 75%;
+        line-height: 24px;
     }
-
-    .container-info::before {
-        content: '';
-        background-image: '../../images/logo.svg';
+    &__main-logo {
+        background-image: url(../../images/toxin.svg);
+        margin-right: auto;
         width: 106px;
-        position: absolute;
-        height: 42px;
-        background-size: 100% 100%;
-		background-position: center center;
-		background-repeat: no-repeat;
-		top: 0px;
-		left: 0px;
+        height: 40px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        object-fit: contain;
     }
-    .container-description {
-        font: 14px;
-        color: rgba(31, 32, 65, 0.75);
+    &-list  {
+        list-style: none;
+        line-height: 15px;
+        flex-flow: row wrap;
+                
+            &__item{
+                margin-bottom: 20px;
+            }
+            &__link {
+                font: 14px/24px Montserrat;
+			    color: #1F2041 50%;
+                margin: 16px;
+            }
+        &-item {
+            position: relative;
+            flex-basis: 23%;	
+            width: 100%;
+            
+        }
     }
+    
+}
+.bold {
+    font-weight: bold;
+    color: #1F2041;
+    
+}
 
-
-    a {
-        text-decoration: none;
-    }
+* {
+    text-decoration: none;
+    list-style: none;
+}
+    

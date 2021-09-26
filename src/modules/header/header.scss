@@ -1,26 +1,26 @@
 .header {
-    background: #FFFFFF;
-    height: 50px;
+	padding: 15px 15px 12px 0px;
+    
     
     &__container {
         display: flex;
         align-items: center;
+        flex-flow: row wrap;
         justify-content: space-between;
-        width: 80%;
-        max-width: 900px;
+        width: 75%;
+        // max-width: 900px;
         margin: 0 auto;
     }
 
     &__container-logo {
         background-image: url(../../images/toxin.svg);
         margin-right: auto;
-        width: 40px;
+        width: 106px;
         height: 40px;
         background-repeat: no-repeat;
         display: inline-block;
         object-fit: contain;
         padding-left: 60px;
-        padding-right: 100px;
     }
     
     
@@ -31,11 +31,10 @@
         align-items: center;
         width: max-content;
         list-style: none;
-        color: rgba(31, 32, 65, 0.5);
 
         &-item {
             font: normal normal 14px/17px Montserrat;
-            color: rgba(31, 32, 65, 0.5);
+            color: #1F2041 50%;
             margin-left: 20px;
         }
     }
