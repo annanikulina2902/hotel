@@ -1,6 +1,5 @@
 include ../../modules/header/header.pug
 include ../../modules/footer/footer.pug
-include ../../modules/submenu/submenu.pug
 
 
 doctype html
@@ -9,10 +8,14 @@ head
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css")
     title landing-page
-body
-    //- header.landing-page__header
-    //-     +header 
-    //- main.landing-page__main
-    //-     span Здесь лендинг
-    //- footer.landing-page__footer
-    //-     +footer 
+
+body 
+    .landing-page 
+        header.landing-page__header 
+            +header 
+        main.landing-page__main
+            .landing-page__main-container 
+            .landing-page__slogan 
+            span.landing-page__slogan-text Лучшие номера для вашей работы
+        footer.landing-page__footer 
+            +footer         
