@@ -30,12 +30,21 @@
         align-items: center;
         width: max-content;
         list-style: none;
+        
 
         &-item {
             font: normal normal 14px/17px Montserrat;
             color: #1F2041 50%;
             margin-left: 20px;
         }
+        &-link {
+            cursor: pointer;
+
+            &-bold {
+                font-weight: bold;
+            }
+        }
+
     }
 
     a {
