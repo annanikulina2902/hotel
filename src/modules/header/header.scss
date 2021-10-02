@@ -35,12 +35,12 @@
         &-item {
             font: normal normal 14px/17px Montserrat;
             color: #1F2041 50%;
-            margin-left: 20px;
+            margin-right: 21px;
         }
         &-link {
             cursor: pointer;
 
-            &-bold {
+            &__bold {
                 font-weight: bold;
             }
         }
@@ -49,4 +49,10 @@
 
     a {
         text-decoration: none;
+    }
+    .nav-link__arrow::after {
+        background-image: url(../../images/arrow.svg);
+        height: 8px;
+        width: 12px;
+
     }
