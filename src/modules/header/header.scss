@@ -19,10 +19,8 @@
         background-repeat: no-repeat;
         display: inline-block;
         object-fit: contain;
-        padding-left: 60px;
-    }
-    
-    
+        padding-left: 40px;
+    } 
 }
     .nav {	
         display: flex;
@@ -36,6 +34,7 @@
             font: normal normal 14px/17px Montserrat;
             color: #1F2041 50%;
             margin-right: 21px;
+            padding: 5px;
         }
         &-link {
             cursor: pointer;
@@ -43,16 +42,21 @@
             &__bold {
                 font-weight: bold;
             }
+            &__arrow {
+                background-image: url(../../images/arrow.svg);
+                background-repeat: no-repeat;
+                height: 8px;
+                width: 10px;
+                background-position: right;
+                content: '#';
+                padding-right: 16px;
+
+            }
+                
         }
 
     }
 
     a {
         text-decoration: none;
-    }
-    .nav-link__arrow::after {
-        background-image: url(../../images/arrow.svg);
-        height: 8px;
-        width: 12px;
-
     }
