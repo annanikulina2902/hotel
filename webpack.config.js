@@ -15,7 +15,6 @@ const PAGES_LIST = {
   detail: 'detail',
   landing: 'landing',
   singin: 'singin',
-  colorstype: 'colorstype',
 };
 const PAGES_DIR = `${PATHS.src}/${PATHS.pages}`;
 const PAGES_FILE = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
@@ -38,7 +37,6 @@ module.exports = {
     catalog: path.resolve(__dirname, './src/js/catalog.js'),
     detail: path.resolve(__dirname, './src/js/detail.js'),
     singin: path.resolve(__dirname, './src/js/singin.js'),
-    colorstype: path.resolve(__dirname, './src/js/colorstype.js'),
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -108,11 +106,6 @@ module.exports = {
       template: `${PAGES_DIR}/${PAGES_LIST.singin}/${PAGES_LIST.singin}.pug`,
       filename: `${PAGES_LIST.singin}.html`,
       chunks: ['main', `${PAGES_LIST.singin}`],
-    }),
-    new HtmlWebpackPlugin({
-      template: `${PAGES_DIR}/${PAGES_LIST.colorstype}/${PAGES_LIST.colorstype}.pug`,
-      filename: `${PAGES_LIST.colorstype}.html`,
-      chunks: ['main', `${PAGES_LIST.colorstype}`],
     }),
     new CleanWebpackPlugin(),
   ],

@@ -14,8 +14,12 @@ body
         header.landing-page__header 
             +header 
         main.landing-page__main
-            .landing-page__main-container 
+            .landing-page__calendar 
+                <input type='text' class="datepicker-here" />
             .landing-page__slogan 
             span.landing-page__slogan-text Лучшие номера для вашей работы
         footer.landing-page__footer 
             +footer         
+        
+        script(src="https://code.jquery.com/jquery-3.6.0.min.js") 
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js")
